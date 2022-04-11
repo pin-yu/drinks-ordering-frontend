@@ -1,0 +1,22 @@
+<div *ngIf="!selectedUser">
+  <h2>你是?</h2>
+</div>
+<div *ngIf="selectedUser">
+  <h2>你是{{selectedUser.name}}</h2>
+</div>
+
+<ul class="users">
+  <li *ngFor="let user of users">
+    <button [class.selected]="user === selectedUser" type="button" (click)="onSelect(user)">
+      <span>{{user.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<div>
+  <label for="user-name">新增一個</label>
+  <input id="user-name" placeholder="你的名字" onfocus="placeholder = ''" onblur="placeholder = '你的名字'">
+  <button>
+    <span>新增</span>
+  </button>
+</div>
