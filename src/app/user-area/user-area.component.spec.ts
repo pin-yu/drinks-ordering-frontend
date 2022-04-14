@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhoAreaComponent } from './who-area.component';
+import { UserAreaComponent } from './user-area.component';
 
-describe('WhoAreaComponent', () => {
-  let component: WhoAreaComponent;
-  let fixture: ComponentFixture<WhoAreaComponent>;
+describe('UserAreaComponent', () => {
+  let component: UserAreaComponent;
+  let fixture: ComponentFixture<UserAreaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhoAreaComponent ]
+      declarations: [ UserAreaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WhoAreaComponent);
+    fixture = TestBed.createComponent(UserAreaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

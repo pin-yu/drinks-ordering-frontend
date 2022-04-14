@@ -3,11 +3,11 @@ import { User } from '../entities/user';
 import { UserService } from '../user.service';
 
 @Component({
-  selector: 'app-who-area',
-  templateUrl: './who-area.component.html',
-  styleUrls: ['./who-area.component.css']
+  selector: 'app-user-area',
+  templateUrl: './user-area.component.html',
+  styleUrls: ['./user-area.component.css']
 })
-export class WhoAreaComponent implements OnInit {
+export class UserAreaComponent implements OnInit {
   users: User[] = [];
   selectedUser? : User;
 

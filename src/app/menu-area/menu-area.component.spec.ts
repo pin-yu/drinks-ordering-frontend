@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhoComponent } from './who.component';
+import { MenuAreaComponent } from './menu-area.component';
 
-describe('WhoComponent', () => {
-  let component: WhoComponent;
-  let fixture: ComponentFixture<WhoComponent>;
+describe('MenuAreaComponent', () => {
+  let component: MenuAreaComponent;
+  let fixture: ComponentFixture<MenuAreaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhoComponent ]
+      declarations: [ MenuAreaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WhoComponent);
+    fixture = TestBed.createComponent(MenuAreaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
