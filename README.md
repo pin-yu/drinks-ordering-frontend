@@ -1,4 +1,10 @@
 # DrinksOrderingFrontend
+Let Datalab's member order Cama drinks.
+
+## Update Angular CLI to latest version
+`ng update @angular/core @angular/cli`
+
+## Auto-generated README
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
