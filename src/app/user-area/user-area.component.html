@@ -1,8 +1,5 @@
-<div *ngIf="!selectedUser">
-  <h2>你是?</h2>
-</div>
-<div *ngIf="selectedUser">
-  <h2>你是{{selectedUser.name}}</h2>
+<div>
+  <h2>你是{{selectedUser !== undefined ? selectedUser.name : '?'}}</h2>
 </div>
 
 <ul class="users">

@@ -1,12 +1,10 @@
-export interface Drinks {
+import { Sugar, Ice } from "./adjust";
+export interface Drink {
+  id: number;
   name: string;
 
-  noSugar: boolean;
-  quarterSugar: boolean;
+  sugarsAdjustable: Sugar[];
+  IcesAdjustable: Ice[];
 
-  noIce: boolean;
-  lessIce: boolean;
-
-  mediumPrice?: number;
-  largePrice?: number;
+  mediumPrice: number;
 }

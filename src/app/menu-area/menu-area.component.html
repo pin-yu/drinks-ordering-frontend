@@ -1,1 +1,18 @@
-<p>menu-area works!</p>
+<div class="menu-area">
+    <ul class="menu" title="菜單" *ngFor="let drink of menu">
+        <div class="drink">
+            <h2>{{drink.name}}</h2>
+            <label for="sugarForm">甜度</label>
+            <ul id="sugarForm" *ngFor="let sugar of drink.sugarsAdjustable">
+                <label for={{sugar}}>{{sugar}}</label>
+                <input id={{sugar}} type="checkbox">
+            </ul>
+            <label for="iceForm">冰塊</label>
+            <ul id="iceForm" *ngFor="let ice of drink.IcesAdjustable">
+                <label for={{ice}}>{{ice}}</label>
+                <input id={{ice}} type="checkbox">
+            </ul>
+            <p>價格: {{drink.mediumPrice}}</p>
+        </div>
+    </ul>
+</div>
