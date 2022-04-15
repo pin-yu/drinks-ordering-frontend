@@ -15,8 +15,8 @@
 
 <div>
   <label for="user-name">新增一個</label>
-  <input id="user-name" placeholder="你的名字" onfocus="placeholder = ''" onblur="placeholder = '你的名字'">
-  <button>
+  <input id="user-name" [(ngModel)]="userInputName" placeholder="你的名字" onfocus="placeholder = ''" onblur="placeholder = '你的名字'">
+  <button (click)="onClickBtn()">
     <span>新增</span>
   </button>
 </div>

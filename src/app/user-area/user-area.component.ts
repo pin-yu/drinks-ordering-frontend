@@ -10,6 +10,7 @@ import { UserService } from '../user.service';
 export class UserAreaComponent implements OnInit {
   users: User[] = [];
   selectedUser? : User;
+  userInputName?: string;
 
   constructor(private userService: UserService) { }
 
@@ -19,5 +20,16 @@ export class UserAreaComponent implements OnInit {
 
   onSelect(who: User): void {
     this.selectedUser = who;
+  }
+
+  onClickBtn(): void {
+    if (this.userInputName !== undefined && this.userInputName !== '') {
+      this.userService.registerUser(this.userInputName).subscribe(users => this.users = users);
+      this.resetUserInputName();
+    }
+  }
+
+  resetUserInputName() {
+    this.userInputName = '';
   }
 }

@@ -18,4 +18,12 @@ export class UserService {
     return users;
   }
 
+  registerUser(newUserName: string): Observable<User[]> {
+    if (newUserName !== '') {
+      this.mockUsers.push({name: newUserName});
+    }
+    
+    return of(this.mockUsers);
+  }
+
 }
