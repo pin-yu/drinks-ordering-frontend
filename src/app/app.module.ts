@@ -24,7 +24,7 @@ import { StatisticsAreaComponent } from './statistics-area/statistics-area.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
